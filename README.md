@@ -3,4 +3,4 @@
 
 实验参考资料：https://github.com/Asia-Lee/Naive_Bayes
 
-sv.py是朴素贝叶斯实现垃圾邮寄分类的实现代码。
+sv.py是朴素贝叶斯实现垃圾邮寄分类的python语言实现代码。
