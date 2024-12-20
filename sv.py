@@ -99,11 +99,11 @@ docList = []
 classList = []
 fullText = []
 for i in range(1, 31):  # 读取60个txt文件（垃圾文件30个，非垃圾文件30个），生成符号数组
-    wordList = textParse(open('D:/bayes/spam/%d.txt' % i, 'r').read())  # 读取每个垃圾邮件，并字符串转换成字符串列表
+    wordList = textParse(open('bayes/spam/%d.txt' % i, 'r').read())  # 读取每个垃圾邮件，并字符串转换成字符串列表
     docList.append(wordList)
     fullText.append(wordList)
     classList.append(1)  # 标记垃圾邮件，1表示垃圾文件
-    wordList = textParse(open('D:/bayes/ham/%d.txt' % i, 'r').read())  # 读取每个非垃圾邮件，并字符串转换成字符串列表
+    wordList = textParse(open('bayes/ham/%d.txt' % i, 'r').read())  # 读取每个非垃圾邮件，并字符串转换成字符串列表
     docList.append(wordList)
     fullText.append(wordList)
     classList.append(0)  # 标记正常邮件，0表示正常文件
